@@ -1,0 +1,11 @@
+---
+title: "References"
+---
+
+### References
+
+::: {#refs}
+:::
+
+> **Citation**\
+> Jafarbiglu, H., & Pourreza, A. (2023). *Impact of sun-view geometry on canopy spectral reflectance variability*. ISPRS Journal of Photogrammetry and Remote Sensing, 196, 270–286. <https://doi.org/10.1016/j.isprsjprs.2022.12.002>

@@ -1,0 +1,25 @@
+---
+title: "Background"
+---
+
+## Sun Glare and Hotspots Disrupt Gaussian Splat Rendering
+
+Gaussian splatting encodes appearance as view-dependent textures without enforcing angular reflectance models. However, its effectiveness depends on consistent illumination during data collection. In outdoor environments, directional sunlight introduces challenges such as glare and hotspot effects, which result in lighting inconsistencies that degrade visual quality.
+
+-   **Hotspots introduce localized artifacts**\
+    When the viewing direction aligns closely with the sun, strong backscattering produces a hotspot—an over-bright region that dominates the visual scene. This distorts appearance and masks surface detail, leading to unrealistic renderings in affected areas.
+
+-   **Illumination inconsistency leads to visual incoherence**\
+    Since splats are not normalized across lighting conditions, frames captured under varying sun angles or cloud cover will produce inconsistent brightness and color. These inconsistencies become especially evident when interpolating or blending splats across views.
+
+-   **Glare reduces usable data**\
+    Frames affected by direct glare or harsh lighting gradients often contain clipped or distorted pixel values. These frames contribute less useful information to the splat representation and can introduce artifacts if not properly filtered or corrected.
+
+-   **Splat blending is sensitive to lighting variation**\
+    Adjacent splats derived from differently lit frames may exhibit mismatched shading, resulting in visible seams or inconsistent tone across surfaces. These issues are particularly problematic in photorealistic renderings where smooth transitions are expected.
+
+Empirical studies have shown that even a small shift in view angle (as little as 2°) can cause reflectance to vary by more than 50%, primarily due to the influence of sun-view geometry and the dominance of directional solar irradiance [@jafarbiglu2023sunview]. While such variation is often addressed in vegetation index applications through normalization or calibration, Gaussian splats rely on consistent input appearance and are more sensitive to illumination variability.
+
+Minimizing lighting variation at the time of capture—particularly by avoiding hotspots and excessive glare—is essential for producing clean, artifact-free splat renderings suitable for interactive visualization.
+
+## References

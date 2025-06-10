@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "splatview-opt"
+
+  description: >
+    An interactive report on optimizing viewing angles for Gaussian Splat scenes, focused on minimizing sun glare and visual hotspots in outdoor visualizations.
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Background
+        href: background.qmd
+      - text: Study
+        href: study.qmd
+      - text: Interactive Tool
+        href: interactive_tool.qmd
+      - text: References
+        href: references.qmd
+
+bibliography: bibliography.bib
+csl: ieee.csl   # Optional, or ieee.csl etc.
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
+ 

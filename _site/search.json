@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "splatview-opt",
+    "section": "",
+    "text": "splatview-opt is a tool for analyzing and optimizing viewing angles in Gaussian Splat renderings, with a focus on minimizing sun glare and visual hotspots. By simulating real-world lighting conditions, this project helps identify optimal camera orientations for clear, artifact-free visualization—ideal for outdoor 3D scenes and photorealistic splat-based environments.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background",
+    "section": "",
+    "text": "Gaussian splatting encodes appearance as view-dependent textures without enforcing angular reflectance models. However, its effectiveness depends on consistent illumination during data collection. In outdoor environments, directional sunlight introduces challenges such as glare and hotspot effects, which result in lighting inconsistencies that degrade visual quality.\n\nHotspots introduce localized artifacts\nWhen the viewing direction aligns closely with the sun, strong backscattering produces a hotspot—an over-bright region that dominates the visual scene. This distorts appearance and masks surface detail, leading to unrealistic renderings in affected areas.\nIllumination inconsistency leads to visual incoherence\nSince splats are not normalized across lighting conditions, frames captured under varying sun angles or cloud cover will produce inconsistent brightness and color. These inconsistencies become especially evident when interpolating or blending splats across views.\nGlare reduces usable data\nFrames affected by direct glare or harsh lighting gradients often contain clipped or distorted pixel values. These frames contribute less useful information to the splat representation and can introduce artifacts if not properly filtered or corrected.\nSplat blending is sensitive to lighting variation\nAdjacent splats derived from differently lit frames may exhibit mismatched shading, resulting in visible seams or inconsistent tone across surfaces. These issues are particularly problematic in photorealistic renderings where smooth transitions are expected.\n\nEmpirical studies have shown that even a small shift in view angle (as little as 2°) can cause reflectance to vary by more than 50%, primarily due to the influence of sun-view geometry and the dominance of directional solar irradiance [1]. While such variation is often addressed in vegetation index applications through normalization or calibration, Gaussian splats rely on consistent input appearance and are more sensitive to illumination variability.\nMinimizing lighting variation at the time of capture—particularly by avoiding hotspots and excessive glare—is essential for producing clean, artifact-free splat renderings suitable for interactive visualization."
+  },
+  {
+    "objectID": "background.html#sun-glare-and-hotspots-disrupt-gaussian-splat-rendering",
+    "href": "background.html#sun-glare-and-hotspots-disrupt-gaussian-splat-rendering",
+    "title": "Background",
+    "section": "",
+    "text": "Gaussian splatting encodes appearance as view-dependent textures without enforcing angular reflectance models. However, its effectiveness depends on consistent illumination during data collection. In outdoor environments, directional sunlight introduces challenges such as glare and hotspot effects, which result in lighting inconsistencies that degrade visual quality.\n\nHotspots introduce localized artifacts\nWhen the viewing direction aligns closely with the sun, strong backscattering produces a hotspot—an over-bright region that dominates the visual scene. This distorts appearance and masks surface detail, leading to unrealistic renderings in affected areas.\nIllumination inconsistency leads to visual incoherence\nSince splats are not normalized across lighting conditions, frames captured under varying sun angles or cloud cover will produce inconsistent brightness and color. These inconsistencies become especially evident when interpolating or blending splats across views.\nGlare reduces usable data\nFrames affected by direct glare or harsh lighting gradients often contain clipped or distorted pixel values. These frames contribute less useful information to the splat representation and can introduce artifacts if not properly filtered or corrected.\nSplat blending is sensitive to lighting variation\nAdjacent splats derived from differently lit frames may exhibit mismatched shading, resulting in visible seams or inconsistent tone across surfaces. These issues are particularly problematic in photorealistic renderings where smooth transitions are expected.\n\nEmpirical studies have shown that even a small shift in view angle (as little as 2°) can cause reflectance to vary by more than 50%, primarily due to the influence of sun-view geometry and the dominance of directional solar irradiance [1]. While such variation is often addressed in vegetation index applications through normalization or calibration, Gaussian splats rely on consistent input appearance and are more sensitive to illumination variability.\nMinimizing lighting variation at the time of capture—particularly by avoiding hotspots and excessive glare—is essential for producing clean, artifact-free splat renderings suitable for interactive visualization."
+  },
+  {
+    "objectID": "background.html#references",
+    "href": "background.html#references",
+    "title": "Background",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "References\n\n\n\n\nCitation\nJafarbiglu, H., & Pourreza, A. (2023). Impact of sun-view geometry on canopy spectral reflectance variability. ISPRS Journal of Photogrammetry and Remote Sensing, 196, 270–286. https://doi.org/10.1016/j.isprsjprs.2022.12.002"
+  },
+  {
+    "objectID": "references.html#references",
+    "href": "references.html#references",
+    "title": "References",
+    "section": "",
+    "text": "Citation\nJafarbiglu, H., & Pourreza, A. (2023). Impact of sun-view geometry on canopy spectral reflectance variability. ISPRS Journal of Photogrammetry and Remote Sensing, 196, 270–286. https://doi.org/10.1016/j.isprsjprs.2022.12.002"
+  }
+]
