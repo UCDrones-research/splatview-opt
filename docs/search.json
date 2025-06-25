@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "splatview-opt",
     "section": "",
-    "text": "splatview-opt is a tool for analyzing and optimizing viewing angles in Gaussian Splat renderings, with a focus on minimizing sun glare and visual hotspots. By simulating real-world lighting conditions, this project helps identify optimal camera orientations for clear, artifact-free visualization—ideal for outdoor 3D scenes and photorealistic splat-based environments.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "splatview-opt is a tool for analyzing and optimizing viewing angles in Gaussian Splat renderings, with a focus on minimizing sun glare and visual hotspots. By simulating real-world lighting conditions, this project helps identify optimal camera orientations for clear, artifact-free visualization—ideal for outdoor 3D scenes and photorealistic splat-based environments. test\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "about.html",
